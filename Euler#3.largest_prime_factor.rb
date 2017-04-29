@@ -1,10 +1,9 @@
-def is_prime?(n) 
+def is_prime?(n)
   for i in 2..Math.sqrt(n)
-    if (n % i).eql?(0)
-      return false 
-    end 
+    return false if (n % i).eql?(0)
   end 
   return true 
+
 end 
 
 def greatest_prime_factor(n) 

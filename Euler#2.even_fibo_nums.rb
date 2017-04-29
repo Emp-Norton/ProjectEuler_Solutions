@@ -1,10 +1,10 @@
 
-def fibo_sum
+def fibo_sum(max = 4000000)
   previous = 1 
   current = 1 
   new_fibo = previous + current # recursion too slow with large values for n.
   sum = 2 
-  while new_fibo < 4000000
+  while new_fibo < max 
     previous = current
     current = new_fibo 
     new_fibo = previous + current
@@ -13,4 +13,4 @@ def fibo_sum
   puts sum
 end
 
-fibo_sum
+fibo_sum()
