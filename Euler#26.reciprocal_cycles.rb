@@ -1,5 +1,5 @@
 def is_prime?(n)
-  for i in 2..(n / 2) 
+  for i in 2..Math.sqrt(n)
     return false if (n % i).eql?(0)
   end 
   return true 

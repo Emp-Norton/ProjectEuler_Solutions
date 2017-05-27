@@ -19,17 +19,15 @@ end
 
 def non_abundant_sums(max = 28123)
   non_abundant_composites = []
-  puts "Start time: #{Time.now}"
   for abundant_composite in 1..100 
     non_abundant_composites.push(abundant_composite) if is_abundant_composite?(abundant_composite).eql?(false)
   end 
   101.step(max, 2) do | abundant_composite | 
     if is_abundant_composite?(abundant_composite).eql?(false)
-       non_abundant_composites.push(abundant_composite)
+      non_abundant_composites.push(abundant_composite)
    end
  end 
  puts non_abundant_composites.inject { | sum, num | sum += num } 
-puts "Finish time: #{Time.now}"
 end 
 
 non_abundant_sums(28123)
