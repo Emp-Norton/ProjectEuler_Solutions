@@ -17,7 +17,7 @@ triangle =
 
 
 (triangle.length - 1).downto(0) do | row | 
-  0.upto(row-  1) { | num | triangle [row - 1][num] += [triangle [row][num], triangle [row][num + 1]].max }  
+  0.upto(row - 1) { | num | triangle [row - 1][num] += [triangle [row][num], triangle [row][num + 1]].max }  
 end 
  
 puts triangle [0][0]
