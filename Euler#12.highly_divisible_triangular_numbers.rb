@@ -17,7 +17,7 @@ def div_counter(num)
   return @div_count
 end 
 
-def step(max)
+def find_by_max_divisors(max)
   @div_count = 0 
   num = 1 
     until @div_count >= max 
@@ -27,4 +27,4 @@ def step(max)
 puts "Nth: #{num}, Value: #{tri_num(num-1)}"
 end 
 
-step(500)
+find_by_max_divisors(500)
