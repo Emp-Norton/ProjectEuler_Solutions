@@ -11,4 +11,4 @@ for num in 1..1000000
   doublePalindromes.push(num) if isPalindrome?(num.to_s(2)) && isPalindrome?(num)
 end 
 
-doublePalindromes.inject{ | sum, num | sum += num }
+p doublePalindromes.inject{ | sum, num | sum += num }
