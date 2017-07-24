@@ -17,7 +17,7 @@ triangle =
 
 
 (triangle.length - 1).downto(0) do | row | 
-<<<<<<< HEAD
+<<<<<<< HEAD # what is this nonsense? I keep removing it, then it reappears every time I push updates to git. Look into this. 
   0.upto(row - 1) { | num | triangle [row - 1][num] += [triangle [row][num], triangle [row][num + 1]].max }  
 =======
   0.upto(row -  1) { | num | triangle [row - 1][num] += [triangle [row][num], triangle [row][num + 1]].max }  

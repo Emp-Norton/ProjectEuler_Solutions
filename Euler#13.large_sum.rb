@@ -1,6 +1,8 @@
 def largesum
+  puts "Where is the file to parse?"
+  filepath = gets.chomp
   nums = []
-  File.open('C:\Users\Admin\Desktop\Coding Stuff\Euler\largesumnums.txt', "r") do | file | 
+  File.open(filepath, "r") do | file | # why did I have the filepath hardcoded last time? think on it, revert if necessary.
     file.each_line { | line | nums.push(line) } 
   end 
   sum = 0
