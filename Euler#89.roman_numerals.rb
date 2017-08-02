@@ -5,7 +5,7 @@ File.open('C:\Users\james\Desktop\Coding Stuff\Euler\data\roman.txt', 'r') do | 
   end 
 end 
 
-@minimal_forms = {}
+
 @converted = [] 
 @conversion_hash = {"I" => 1, "V" => 5, "X" => 10, "L" => 50, "C" => 100, "D" => 500, "M" => 1000}
 @min_numerals = [] 
@@ -23,7 +23,6 @@ def convert_numeral_to_decimal(str)
   end 
 
   result = nums.inject{ | sum, num | sum += num }
-  @minimal_forms[str] = result if is_minimal
   return result 
   
 end 
