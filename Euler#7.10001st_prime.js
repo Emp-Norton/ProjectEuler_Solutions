@@ -1,0 +1,1 @@
+function _(n){for(var _=Math.sqrt(n),i=2;i<=_;i++)if(n%i===0)return !1;return !0}function _0(_1){for(var _2=2,_3=1;;){if(_(_2))if(_3==_1)console.log(_2);_3+=1;_2+=1}else _2+=1;if(_3>_1)break}}_0(10001);
